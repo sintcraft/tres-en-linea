@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiktaktoe</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="tablero">
+        <div class="f1 fila">
+            <div id="c0" class="celda" onclick="clickCelda(0)"></div>
+            <div id="c1" class="celda" onclick="clickCelda(1)"></div>
+            <div id="c2" class="celda" onclick="clickCelda(2)"></div>
+        </div>
+        <div class="f2 fila">
+            <div id="c3" class="celda" onclick="clickCelda(3)"></div>
+            <div id="c4" class="celda" onclick="clickCelda(4)"></div>
+            <div id="c5" class="celda" onclick="clickCelda(5)"></div>
+        </div>
+        <div class="f3 fila">
+            <div id="c6" class="celda" onclick="clickCelda(6)"></div>
+            <div id="c7" class="celda" onclick="clickCelda(7)"></div>
+            <div id="c8" class="celda" onclick="clickCelda(8)"></div>
+        </div>
+        <div id="lineav1"></div>
+        <div id="lineav2"></div>
+        <div id="lineah1"></div>
+        <div id="lineah2"></div>
+    </div>
+    <div class="info">
+        <div class="stats">
+            <div class="title">
+                <h3>Stats</h3>
+                <div></div>
+            </div>
+            <div class="global">
+                <div class="totalGames">
+                    <h4 id="totalGame">Juegos totales: 0</h4>
+                </div>
+                <div class="totalMovs">
+                    <h4 id="totalMov">Movimientos totales: 0</h4>
+                </div>
+            </div>
+            <div class="now">
+                <div class="turn">
+                    <h4 id="toka">Tuno de: X</h4>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <div id="reset_botonxd" onclick="reset()">RESET</div>
+        </div>
+    </div>
+    <div id="ganador" style="height: auto;"></div>
+    <script src="./tiktaktoe.js"></script>
+</body>
+</html>
